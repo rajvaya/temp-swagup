@@ -320,7 +320,7 @@ function checkFormCompletion() {
   var isFormComplete =
     shippingQuantityInput.value &&
     countrySelect.value &&
-    zipCodeInput.value.length >= 6 &&
+    zipCodeInput.value.length >= 4 && zipCodeInput.value.length <= 10
     provinceStateFilled;
 
   if (isFormComplete) {
